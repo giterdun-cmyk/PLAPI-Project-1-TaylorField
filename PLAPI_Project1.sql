@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 10, 2020 at 06:00 PM
+-- Generation Time: Jan 10, 2020 at 09:07 PM
 -- Server version: 5.7.25
 -- PHP Version: 7.3.1
 
@@ -89,7 +89,8 @@ INSERT INTO `cars` (`id`, `year`, `make`, `model`, `nickname`) VALUES
 (48, '2000', ' Toyota', ' Landcruiser', ' Cathy'),
 (49, '1998', ' Toyota', ' Supra Turbo', ' Lynn'),
 (50, '2000', ' Volvo', ' Turbo Wagon R', ' Lisa'),
-(51, '1992', 'Jeep', 'Sahara', 'Wrangler');
+(53, '1992', 'Jeep', 'Sahara YJ', 'Wrangler'),
+(54, '1955', 'Lincoln', 'Futura', 'Bat Mobile');
 
 --
 -- Indexes for dumped tables
@@ -109,7 +110,7 @@ ALTER TABLE `cars`
 -- AUTO_INCREMENT for table `cars`
 --
 ALTER TABLE `cars`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

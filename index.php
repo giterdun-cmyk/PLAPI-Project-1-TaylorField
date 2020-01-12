@@ -22,11 +22,12 @@ function __($input){
   </head>
   <body>
     <div class="container pt-5">
-      <h3>Cars</h3>
+      <h2 class="text-center">Find your Car!</h2>
       <hr>
 
       <div class="row">
         <div class="col-12">
+        <h4>Search Input -</h4><hr class="line">
           <form class="input-group" id="search-form">
 
             <div class="input-group-prepend">
@@ -45,7 +46,6 @@ function __($input){
                 ?>
               </select>
             </div>
-
             <input type="search" name="search" 
               placeholder="Enter Car Make or Model" 
               class="form-control" id="search-model">
@@ -65,7 +65,6 @@ function __($input){
 
 
 
-
       <table class="table">
         <thead>
           <th>Make</th>
@@ -74,10 +73,21 @@ function __($input){
           <th>Nickname</th>
         </thead>
         <tbody id="search-results">
-         
-
-         
+              
         </tbody>
+        <tfoot id="newCar" class="pt-3">
+        <thead>
+          <th>- Make</th>
+          <th>- Model</th>
+          <th>- Year</th>
+          <th>- Nickname</th>
+        </thead>
+          <th><input type="text" class="form-control" placeholder="Make" id="car_make_input"></th>
+          <th><input type="text" class="form-control" placeholder="Model" id="car_model_input"></th>
+          <th><input type="text" class="form-control" placeholder="Year" id="car_year_input"></th>
+          <th><input type="text" class="form-control" placeholder="Nickname" id="car_nickname_input"></th>
+          <th><button class="btn btn-info" data-action="insert"><i class="fas fa-plus"></th>
+        </tfoot>
       </table>
     </div>
     

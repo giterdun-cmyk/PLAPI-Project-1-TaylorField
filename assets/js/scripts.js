@@ -73,6 +73,52 @@ $(document).ready(function(){
     });
 
 
+
+
+
+
+
+// On Add Button Click
+$("#newCar").on("click", "[data-action=insert]", function(){
+    
+    var year = $('#car_year_input').val();     
+    var make = $('#car_make_input').val();     
+    var model = $('#car_model_input').val(); 
+    var nickname = $('#car_nickname_input').val(); 
+   
+if( year == "" || make == "" || model == "" || nickname == "") return;
+
+    $.ajax({
+        url: "ajax/add.php",
+        type: "POST",
+        data: {
+            new_make: make,
+            new_model: model,
+            new_year: year,
+            new_nickname: nickname
+        },
+
+        success: function(insert){
+           if(insert == "") return;
+
+           cool_search();
+        }
+    });
+
+});
+
+   /*
+    // On Add Button Click
+    $("#search-results").on("click", "[data-action=add]", function(){
+        car_id = $(this).data("car");
+
+        $("#addCarAlert").modal("show");
+    });
+
+    */
+
+
+
     /*
      * 
      * Cool Search

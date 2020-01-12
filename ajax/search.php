@@ -17,7 +17,7 @@ if($search || $year || $search_model) {
     $search_sql = "SELECT * FROM cars
                WHERE nickname LIKE '%$search%' AND CONCAT_WS('', make, model) LIKE '%$search_model%'"; 
 
-// WHERE CONCAT_WS('',make, model) LIKE '%$search%'";     WHERE nickname LIKE '%$search%' AND model LIKE '%$model%'";
+// WHERE CONCAT_WS('',make, model) LIKE '%$search%'";     WHERE nickname LIKE '%$search%' AND model LIKE '%$search_model%'";
 
     if($year != 0) {
         $search_sql .= " AND year = $year";

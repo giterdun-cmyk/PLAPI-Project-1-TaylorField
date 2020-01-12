@@ -1,0 +1,31 @@
+body {
+    background-image: url("/PLAPI-Project-1-TaylorField/images/cars.jpg");
+    background-position: center center;
+	background-repeat:  no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+}
+
+th {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h4 {
+    color: white;
+}
+
+#search-results {
+    color: white;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.582);
+}
+
+.line {
+    color: white;
+}

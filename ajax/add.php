@@ -16,7 +16,7 @@ if($new_year && $new_make && $new_model && $new_nickname) {
     $insert_query = "INSERT INTO cars (year, make, model, nickname)
     VALUES ('$new_year', '$new_make', '$new_model', '$new_nickname')";
 
-    $db->query($insert_query);
+    $db-query($insert_query);
     echo ('🙌');
 }
 

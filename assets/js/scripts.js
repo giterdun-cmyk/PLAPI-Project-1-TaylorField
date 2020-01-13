@@ -158,3 +158,4 @@ if( year == "" || make == "" || model == "" || nickname == "") return;
     } // End of cool_search
 
 }); // end of document ready
+

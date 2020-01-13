@@ -77,12 +77,6 @@ function __($input){
               
         </tbody>
         <tfoot id="newCar" class="pt-3">
-        <thead>
-          <th>- Make</th>
-          <th>- Model</th>
-          <th>- Year</th>
-          <th>- Nickname</th>
-        </thead>
           <th><input type="text" class="form-control" placeholder="Make" id="car_make_input"></th>
           <th><input type="text" class="form-control" placeholder="Model" id="car_model_input"></th>
           <th><input type="text" class="form-control" placeholder="Year" id="car_year_input"></th>
